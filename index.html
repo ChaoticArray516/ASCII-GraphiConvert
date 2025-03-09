@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII GraphiConvert</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 ASCII GraphiConvert</h1>
+        
+        <div class="feature-grid">
+            <a href="image.html" class="feature-card">
+                <div class="card-icon">🖼️</div>
+                <h3>Image Converter</h3>
+                <p>Convert static images to ASCII art</p>
+            </a>
+            <a href="#faq" class="feature-card" onclick="showFAQ()">
+                <div class="card-icon">❓</div>
+                <h3>Q&amp;A</h3>
+                <p>Get help and FAQs</p>
+            </a>
+        </div>
+    <!-- 在index.html的body内添加 -->
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFAQ()">&times;</span>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container"></div>
+            <div class="faq-item">
+                <h3 class="faq-question">🖼️ What image formats are supported? </h3>
+                <p class="faq-answer">All common formats are supported: JPG, PNG, BMP, WEBP, etc.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">⚙️ How to get the best results?</h3>
+                <p class="faq-answer">Recommended parameter combination: Width 200 + Granularity 4 + Contrast 120%</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">💡 Can I use custom characters?</h3>
+                <p class="faq-answer">Currently only preset character sets are supported. Custom characters will be available in v2.0</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">⚠️ What should I do if the exported image is incomplete?</h3>
+                <p class="faq-answer">Try reducing the Width value or increasing the Granularity value</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 新增FAQ控制函数
+        function showFAQ() {
+            document.getElementById('faqModal').style.display = 'block';
+            document.body.classList.add('modal-open');
+        }
+        
+        function closeFAQ() {
+            document.getElementById('faqModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+    </script>
+    <script src="js/common.js"></script>
+    <!-- 在body底部添加版本号 -->
+    <div class="version-footer">
+        <span class="version-badge">Version 1.0</span>
+        <span class="build-info">Build 2025.03</span>
+    </div>
+
+    <script>
+    // 在现有script中添加版本信息
+    const versionInfo = {
+        api: '1.0.0',
+        core: '1.0.0',
+        ui: '1.0.0'
+    };
+    console.log(`%cASCII GraphiConvert ${versionInfo.api}`, 'color:#3498db;font-size:14px;');
+    </script>
+</body>
+
+</html>

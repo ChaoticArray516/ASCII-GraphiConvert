@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image to ASCII</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+</style>
+    
+<body class="converter-page">
+    <div class="container">
+        <header class="page-header">
+            <a href="index.html" class="back-btn">
+                <span class="btn-icon">←</span>
+                <span class="btn-text">Home</span>
+            </a>
+            <h1>🖼️ Image Converter</h1>
+        </header>
+        <div class="upload-container">
+            <!-- <input type="file" id="fileInput" hidden> -->
+             <!-- 确保文件输入元素存在 -->
+            <input type="file" id="fileInput" accept="image/*" hidden>
+            <div class="drop-zone" id="dropZone">
+                <div class="upload-content">
+                    <div class="upload-icon">
+                        <div class="cloud-icon">☁️</div>
+                        <div class="arrow-icon">⬆️</div>
+                    </div>
+                    <!-- <p class="prompt-text">Drag and drop the file here <br>or click to select the file</p> -->
+                     <!-- 触发按钮需要关联文件输入 -->
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        📁 Upload Image
+                    </button>
+                    <div class="file-meta" id="fileMeta">
+                        <span class="file-name"></span>
+                        <span class="file-size"></span>
+                    </div>
+                    <div class="loading-bar" id="loadingBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="param-controls">
+            <!-- 修改参数控件结构 -->
+            <div class="param-group">
+                <label>Width (chars): 
+                    <span id="widthValue" class="param-value">100</span>
+                </label>
+                <input type="range" id="widthRange" min="40" max="400" value="100">
+            </div>
+
+            <div class="param-group">
+                <label>Contrast: 
+                    <span id="contrastValue" class="param-value">100%</span>
+                </label>
+                <input type="range" id="contrastRange" min="50" max="200" value="100">
+            </div>
+            <!-- 采样粒度 -->
+            <div class="param-group">
+                <label>Granularity: 
+                    <span id="granularityValue" class="param-value">8</span>
+                </label>
+                <input type="range" id="granularityRange" min="1" max="10" value="4">
+            </div>
+            <!-- 颜色强度 -->
+            <div class="param-group">
+                <label>Color Intensity: 
+                    <span id="colorIntensityValue" class="param-value">70%</span>
+                </label>
+                <input type="range" id="colorIntensityRange" min="0" max="1" step="0.1" value="0.7">
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="action-btn copy" title="Copy to clipboard">
+                📋 Copy ASCII
+            </button>
+            <button class="action-btn export-txt" title="Export as text file">
+                📄 Export TXT
+            </button>
+            <button class="action-btn export-png" title="Export as PNG image">
+                🖼️ Export PNG
+            </button>
+        </div>
+        <pre id="preview"></pre>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/image.js"></script>
+    <!-- 添加html2canvas CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" 
+            integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+</body>
+</html>
