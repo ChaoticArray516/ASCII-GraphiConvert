@@ -38,7 +38,6 @@ vercel dev
 .
 ├── public/
 │   ├── js/
-│   │   ├── html2canvas.min.js
 │   │   ├── common.js
 │   │   └── image.js
 │   └── css/
