@@ -39,6 +39,7 @@ vercel dev
 ├── public/
 │   ├── js/
 │   │   ├── common.js
+│   │   ├── canvas.worker.js
 │   │   └── image.js
 │   └── css/
 │       └── common.css

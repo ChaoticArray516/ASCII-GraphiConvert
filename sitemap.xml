@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML declaration: Specifies the XML version and character encoding. -->
+
+<!-- Root element for the sitemap. -->
+<!-- The xmlns attribute defines the XML namespace for sitemaps. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- URL entry for a specific page on your site. -->
+  <url>
+    <!-- Location (URL) of the page. This is a required tag. -->
+    <!-- URLs updated with user's GitHub details: https://ChaoticArray516.github.io/ASCII-GraphiConvert/ -->
+    <loc>https://ChaoticArray516.github.io/ASCII-GraphiConvert/index.html</loc>
+
+    <!-- Last modification date of the page (YYYY-MM-DD format). Optional. -->
+    <lastmod>2025-06-19</lastmod>
+
+    <!-- How frequently the page is likely to change. Optional. -->
+    <!-- Valid values: always, hourly, daily, weekly, monthly, yearly, never. -->
+    <changefreq>monthly</changefreq>
+
+    <!-- Priority of this URL relative to other URLs on your site (0.0 to 1.0). Optional. -->
+    <!-- Default is 0.5. Higher priority suggests more importance. -->
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Another URL entry for a different page. -->
+  <url>
+    <loc>https://ChaoticArray516.github.io/ASCII-GraphiConvert/image.html</loc>
+    <lastmod>2025-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
+<!-- End of sitemap. -->
