@@ -8,8 +8,8 @@
   <!-- URL entry for a specific page on your site. -->
   <url>
     <!-- Location (URL) of the page. This is a required tag. -->
-    <!-- URLs updated with user's GitHub details: https://ChaoticArray516.github.io/ASCII-GraphiConvert/ -->
-    <loc>https://ChaoticArray516.github.io/ASCII-GraphiConvert/index.html</loc>
+    <!-- URLs updated with the official domain: https://ascii-graphiconvert.it.com/ -->
+    <loc>https://ascii-graphiconvert.it.com/index.html</loc>
 
     <!-- Last modification date of the page (YYYY-MM-DD format). Optional. -->
     <lastmod>2025-06-19</lastmod>
@@ -25,7 +25,7 @@
 
   <!-- Another URL entry for a different page. -->
   <url>
-    <loc>https://ChaoticArray516.github.io/ASCII-GraphiConvert/image.html</loc>
+    <loc>https://ascii-graphiconvert.it.com/image.html</loc>
     <lastmod>2025-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
