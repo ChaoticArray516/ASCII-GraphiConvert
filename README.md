@@ -1,6 +1,5 @@
 # ASCII GraphiConvert v1.0
 
-![Demo Preview](https://via.placeholder.com/800x400.png?text=ASCII+Art+Demo)
 
 A web application that converts images to colored ASCII art with real-time parameter adjustments and multiple export formats.
 
